@@ -9,3 +9,7 @@ margin: 3px;
 font-size: 125%;
 background-color: #64B082; color: #000000;
 }
+a:hover { font-size:200%;
+background-color: #FFFFFF;
+color: #14AE6C; }
+
