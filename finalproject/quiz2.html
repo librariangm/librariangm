@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Question 2</title>
+	<link href="css/quiz2.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+<script>
+	$(function(){ 
+	$("#option1").click( function(){
+		$("#feedback").html("<h2 style='color:green'> Correct, an M.L.S. is a common requirement for many libraries. </h2>");
+	    $("#koala_eating").css("display","none"); 
+	});
+	$("#option2, #option4").click( function(){
+		$("#feedback").html("<h2 style='color:red'> Nope, an 'extra' graduate degree is not required, but could be helpful. </h2>");
+		$("#koala_eating").css("display","none"); 
+	});
+	$("#option3").click( function(){
+		$("#feedback").html("<h2 style='color:red'> Incorrect, an M.L.S. is required.</h2>");
+		$("#koala_eating").css("display","inline"); 
+	});
+});
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1>What is a common requirement to become a librarian?</h1> <h3>Click on one of the following choices</h3>
+		<h2 id="option1" class="choices"> Master of Library Science </h2> <h2 id="option2" class="choices"> Master of Arts in Literature</h2>
+		<h2 id="option3" class="choices"> No degree required </h2> <h2 id="option4" class="choices"> Master of Arts in History </h2>
+		<div id="feedback"></div>
+	</div>
+</body>
+</html>
